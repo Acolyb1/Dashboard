@@ -54,11 +54,12 @@
 
   /* fx banner */
   .fx-banner {
-    display: flex; align-items: baseline; justify-content: center; gap: 14px;
+    display: flex; align-items: baseline; justify-content: center; gap: 28px; flex-wrap: wrap;
     background: color-mix(in srgb, var(--accent) 16%, var(--surface-1));
     border-bottom: 1px solid var(--accent);
     padding: 10px 16px; font-variant-numeric: tabular-nums;
   }
+  .fx-pill { display: flex; align-items: baseline; gap: 14px; }
   .fx-label { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); }
   .fx-rate { font-size: 20px; font-weight: 700; color: var(--text-primary); }
   .fx-delta { font-size: 13px; font-weight: 600; }
@@ -130,16 +131,21 @@
 </style>
 </head>
 <body>
-  
-    <div class="fx-banner">
-      <span class="fx-label">USD → COP</span>
-      <span class="fx-rate">$ 3,205.55</span>
-      <span class="fx-delta down">▼ -0.22% hoy</span>
-    </div>
-  <div class="ticker-tape"><div class="ticker-tape__track"><span class="ticker-tape__item"><strong>BYDDF</strong> $11.25 <span class="up">▲ +0.00%</span></span><span class="ticker-tape__item"><strong>IESFY</strong> $228.00 <span class="up">▲ +0.00%</span></span><span class="ticker-tape__item"><strong>EC</strong> $15.90 <span class="up">▲ +1.15%</span></span><span class="ticker-tape__item"><strong>CIB</strong> $86.94 <span class="up">▲ +0.42%</span></span><span class="ticker-tape__item"><strong>CEG</strong> $271.33 <span class="down">▼ -1.75%</span></span><span class="ticker-tape__item"><strong>CCJ</strong> $88.36 <span class="down">▼ -2.42%</span></span><span class="ticker-tape__item"><strong>FSLR</strong> $201.20 <span class="down">▼ -0.94%</span></span><span class="ticker-tape__item"><strong>NEE</strong> $88.96 <span class="down">▼ -0.77%</span></span><span class="ticker-tape__item"><strong>PBR</strong> $18.20 <span class="up">▲ +0.17%</span></span><span class="ticker-tape__item"><strong>VST</strong> $157.50 <span class="down">▼ -4.83%</span></span><span class="ticker-tape__item"><strong>AMTX</strong> $1.60 <span class="down">▼ -2.74%</span></span><span class="ticker-tape__item"><strong>DNN</strong> $2.91 <span class="down">▼ -1.69%</span></span><span class="ticker-tape__item"><strong>ENVX</strong> $4.12 <span class="up">▲ +1.23%</span></span><span class="ticker-tape__item"><strong>CLNE</strong> $1.97 <span class="down">▼ -2.19%</span></span><span class="ticker-tape__item"><strong>AMPY</strong> $3.78 <span class="up">▲ +0.53%</span></span><span class="ticker-tape__item"><strong>BYDDF</strong> $11.25 <span class="up">▲ +0.00%</span></span><span class="ticker-tape__item"><strong>IESFY</strong> $228.00 <span class="up">▲ +0.00%</span></span><span class="ticker-tape__item"><strong>EC</strong> $15.90 <span class="up">▲ +1.15%</span></span><span class="ticker-tape__item"><strong>CIB</strong> $86.94 <span class="up">▲ +0.42%</span></span><span class="ticker-tape__item"><strong>CEG</strong> $271.33 <span class="down">▼ -1.75%</span></span><span class="ticker-tape__item"><strong>CCJ</strong> $88.36 <span class="down">▼ -2.42%</span></span><span class="ticker-tape__item"><strong>FSLR</strong> $201.20 <span class="down">▼ -0.94%</span></span><span class="ticker-tape__item"><strong>NEE</strong> $88.96 <span class="down">▼ -0.77%</span></span><span class="ticker-tape__item"><strong>PBR</strong> $18.20 <span class="up">▲ +0.17%</span></span><span class="ticker-tape__item"><strong>VST</strong> $157.50 <span class="down">▼ -4.83%</span></span><span class="ticker-tape__item"><strong>AMTX</strong> $1.60 <span class="down">▼ -2.74%</span></span><span class="ticker-tape__item"><strong>DNN</strong> $2.91 <span class="down">▼ -1.69%</span></span><span class="ticker-tape__item"><strong>ENVX</strong> $4.12 <span class="up">▲ +1.23%</span></span><span class="ticker-tape__item"><strong>CLNE</strong> $1.97 <span class="down">▼ -2.19%</span></span><span class="ticker-tape__item"><strong>AMPY</strong> $3.78 <span class="up">▲ +0.53%</span></span></div></div>
+  <div class="fx-banner">
+        <span class="fx-pill">
+          <span class="fx-label">USD → COP</span>
+          <span class="fx-rate">$ 3,204.48</span>
+          <span class="fx-delta down">▼ -0.25% hoy</span>
+        </span>
+        <span class="fx-pill">
+          <span class="fx-label">EUR → COP</span>
+          <span class="fx-rate">$ 3,646.98</span>
+          <span class="fx-delta up">▲ +3.33% hoy</span>
+        </span></div>
+  <div class="ticker-tape"><div class="ticker-tape__track"><span class="ticker-tape__item"><strong>BYDDF</strong> $11.25 <span class="up">▲ +0.00%</span></span><span class="ticker-tape__item"><strong>IESFY</strong> $228.00 <span class="up">▲ +0.00%</span></span><span class="ticker-tape__item"><strong>EC</strong> $15.93 <span class="up">▲ +1.34%</span></span><span class="ticker-tape__item"><strong>CIB</strong> $86.93 <span class="up">▲ +0.40%</span></span><span class="ticker-tape__item"><strong>CEG</strong> $271.88 <span class="down">▼ -1.55%</span></span><span class="ticker-tape__item"><strong>CCJ</strong> $88.38 <span class="down">▼ -2.40%</span></span><span class="ticker-tape__item"><strong>FSLR</strong> $201.47 <span class="down">▼ -0.81%</span></span><span class="ticker-tape__item"><strong>NEE</strong> $88.81 <span class="down">▼ -0.94%</span></span><span class="ticker-tape__item"><strong>PBR</strong> $18.23 <span class="up">▲ +0.30%</span></span><span class="ticker-tape__item"><strong>VST</strong> $157.71 <span class="down">▼ -4.71%</span></span><span class="ticker-tape__item"><strong>AMTX</strong> $1.59 <span class="down">▼ -3.05%</span></span><span class="ticker-tape__item"><strong>DNN</strong> $2.91 <span class="down">▼ -1.52%</span></span><span class="ticker-tape__item"><strong>ENVX</strong> $4.12 <span class="up">▲ +1.23%</span></span><span class="ticker-tape__item"><strong>CLNE</strong> $1.97 <span class="down">▼ -2.24%</span></span><span class="ticker-tape__item"><strong>AMPY</strong> $3.77 <span class="up">▲ +0.40%</span></span><span class="ticker-tape__item"><strong>BYDDF</strong> $11.25 <span class="up">▲ +0.00%</span></span><span class="ticker-tape__item"><strong>IESFY</strong> $228.00 <span class="up">▲ +0.00%</span></span><span class="ticker-tape__item"><strong>EC</strong> $15.93 <span class="up">▲ +1.34%</span></span><span class="ticker-tape__item"><strong>CIB</strong> $86.93 <span class="up">▲ +0.40%</span></span><span class="ticker-tape__item"><strong>CEG</strong> $271.88 <span class="down">▼ -1.55%</span></span><span class="ticker-tape__item"><strong>CCJ</strong> $88.38 <span class="down">▼ -2.40%</span></span><span class="ticker-tape__item"><strong>FSLR</strong> $201.47 <span class="down">▼ -0.81%</span></span><span class="ticker-tape__item"><strong>NEE</strong> $88.81 <span class="down">▼ -0.94%</span></span><span class="ticker-tape__item"><strong>PBR</strong> $18.23 <span class="up">▲ +0.30%</span></span><span class="ticker-tape__item"><strong>VST</strong> $157.71 <span class="down">▼ -4.71%</span></span><span class="ticker-tape__item"><strong>AMTX</strong> $1.59 <span class="down">▼ -3.05%</span></span><span class="ticker-tape__item"><strong>DNN</strong> $2.91 <span class="down">▼ -1.52%</span></span><span class="ticker-tape__item"><strong>ENVX</strong> $4.12 <span class="up">▲ +1.23%</span></span><span class="ticker-tape__item"><strong>CLNE</strong> $1.97 <span class="down">▼ -2.24%</span></span><span class="ticker-tape__item"><strong>AMPY</strong> $3.77 <span class="up">▲ +0.40%</span></span></div></div>
   <div class="wrap top-pad">
     <h1>Panel de energía · StockWatcher</h1>
-    <p class="subtitle">Umbral de alerta: ±3.0% vs apertura del día · Actualizado 2026-07-27 10:49 · Próxima revisión en ~15 min</p>
+    <p class="subtitle">Umbral de alerta: ±3.0% vs apertura del día · Actualizado 2026-07-27 10:55 · Próxima revisión en ~15 min</p>
 
     <h2 class="section">Tendencia combinada</h2>
     <div class="chart-empty">
@@ -163,9 +169,9 @@
           <td class="tkr">VST</td>
           <td class="name-col">Vistra Corp.</td>
           <td class="num">$53.1B</td>
-          <td class="num">$157.50</td>
-          <td class="num down">-4.83%</td>
-          <td class="num down">-3.60%</td>
+          <td class="num">$157.71</td>
+          <td class="num down">-4.71%</td>
+          <td class="num down">-3.47%</td>
           <td class="num">49</td>
           <td class="num">26.3</td>
         </tr>
@@ -173,9 +179,9 @@
           <td class="tkr">AMTX</td>
           <td class="name-col">Aemetis, Inc.</td>
           <td class="num">$112M</td>
-          <td class="num">$1.60</td>
-          <td class="num down">-2.74%</td>
-          <td class="num down">-5.34%</td>
+          <td class="num">$1.59</td>
+          <td class="num down">-3.05%</td>
+          <td class="num down">-5.64%</td>
           <td class="num">43</td>
           <td class="num">N/D</td>
         </tr>
@@ -183,9 +189,9 @@
           <td class="tkr">CCJ</td>
           <td class="name-col">Cameco Corporation</td>
           <td class="num">$38.5B</td>
-          <td class="num">$88.36</td>
-          <td class="num down">-2.42%</td>
-          <td class="num up">+0.57%</td>
+          <td class="num">$88.38</td>
+          <td class="num down">-2.40%</td>
+          <td class="num up">+0.59%</td>
           <td class="num">38</td>
           <td class="num">84.2</td>
         </tr>
@@ -194,8 +200,8 @@
           <td class="name-col">Clean Energy Fuels Corp.</td>
           <td class="num">$433M</td>
           <td class="num">$1.97</td>
-          <td class="num down">-2.19%</td>
-          <td class="num down">-3.15%</td>
+          <td class="num down">-2.24%</td>
+          <td class="num down">-3.20%</td>
           <td class="num">40</td>
           <td class="num">N/D</td>
         </tr>
@@ -203,9 +209,9 @@
           <td class="tkr">CEG</td>
           <td class="name-col">Constellation Energy Corporation</td>
           <td class="num">$96.9B</td>
-          <td class="num">$271.33</td>
-          <td class="num down">-1.75%</td>
-          <td class="num down">-1.10%</td>
+          <td class="num">$271.88</td>
+          <td class="num down">-1.55%</td>
+          <td class="num down">-0.90%</td>
           <td class="num">58</td>
           <td class="num">23.6</td>
         </tr>
@@ -214,10 +220,20 @@
           <td class="name-col">Denison Mines Corp.</td>
           <td class="num">$2.6B</td>
           <td class="num">$2.91</td>
-          <td class="num down">-1.69%</td>
-          <td class="num up">+0.00%</td>
+          <td class="num down">-1.52%</td>
+          <td class="num up">+0.17%</td>
           <td class="num">43</td>
           <td class="num">N/D</td>
+        </tr>
+        <tr>
+          <td class="tkr">EC</td>
+          <td class="name-col">Ecopetrol S.A.</td>
+          <td class="num">$32.7B</td>
+          <td class="num">$15.93</td>
+          <td class="num up">+1.34%</td>
+          <td class="num down">-0.50%</td>
+          <td class="num">54</td>
+          <td class="num">10.6</td>
         </tr>
         <tr>
           <td class="tkr">ENVX</td>
@@ -230,42 +246,32 @@
           <td class="num">N/D</td>
         </tr>
         <tr>
-          <td class="tkr">EC</td>
-          <td class="name-col">Ecopetrol S.A.</td>
-          <td class="num">$32.7B</td>
-          <td class="num">$15.90</td>
-          <td class="num up">+1.15%</td>
-          <td class="num down">-0.69%</td>
-          <td class="num">53</td>
-          <td class="num">10.6</td>
+          <td class="tkr">NEE</td>
+          <td class="name-col">NextEra Energy, Inc.</td>
+          <td class="num">$185.5B</td>
+          <td class="num">$88.81</td>
+          <td class="num down">-0.94%</td>
+          <td class="num down">-1.08%</td>
+          <td class="num">52</td>
+          <td class="num">20.0</td>
         </tr>
         <tr>
           <td class="tkr">FSLR</td>
           <td class="name-col">First Solar, Inc.</td>
           <td class="num">$21.6B</td>
-          <td class="num">$201.20</td>
-          <td class="num down">-0.94%</td>
-          <td class="num down">-0.80%</td>
+          <td class="num">$201.47</td>
+          <td class="num down">-0.81%</td>
+          <td class="num down">-0.67%</td>
           <td class="num">31</td>
           <td class="num">130.6</td>
-        </tr>
-        <tr>
-          <td class="tkr">NEE</td>
-          <td class="name-col">NextEra Energy, Inc.</td>
-          <td class="num">$185.5B</td>
-          <td class="num">$88.96</td>
-          <td class="num down">-0.77%</td>
-          <td class="num down">-0.91%</td>
-          <td class="num">53</td>
-          <td class="num">20.0</td>
         </tr>
         <tr>
           <td class="tkr">AMPY</td>
           <td class="name-col">Amplify Energy Corp.</td>
           <td class="num">$156M</td>
-          <td class="num">$3.78</td>
-          <td class="num up">+0.53%</td>
-          <td class="num down">-4.19%</td>
+          <td class="num">$3.77</td>
+          <td class="num up">+0.40%</td>
+          <td class="num down">-4.31%</td>
           <td class="num">36</td>
           <td class="num">15.1</td>
         </tr>
@@ -273,9 +279,9 @@
           <td class="tkr">CIB</td>
           <td class="name-col">Grupo Cibest S.A.</td>
           <td class="num">$20.6B</td>
-          <td class="num">$86.94</td>
-          <td class="num up">+0.42%</td>
-          <td class="num up">+1.09%</td>
+          <td class="num">$86.93</td>
+          <td class="num up">+0.40%</td>
+          <td class="num up">+1.06%</td>
           <td class="num">69</td>
           <td class="num">10.4</td>
         </tr>
@@ -283,10 +289,10 @@
           <td class="tkr">PBR</td>
           <td class="name-col">Petróleo Brasileiro S.A. (Petrobras)</td>
           <td class="num">$117.3B</td>
-          <td class="num">$18.20</td>
-          <td class="num up">+0.17%</td>
-          <td class="num down">-3.04%</td>
-          <td class="num">54</td>
+          <td class="num">$18.23</td>
+          <td class="num up">+0.30%</td>
+          <td class="num down">-2.90%</td>
+          <td class="num">55</td>
           <td class="num">5.7</td>
         </tr>
         <tr>
@@ -390,26 +396,26 @@
           <div class="sector">Petróleo & Gas</div>
         </div>
       </header>
-      <div class="price">$15.90</div>
+      <div class="price">$15.93</div>
       <div class="delta" style="color:var(--delta-up)">
-        ▲ +1.15% <span class="vs">vs apertura $15.72</span>
+        ▲ +1.34% <span class="vs">vs apertura $15.72</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,40.0 26.8,4.0 50.6,6.4 74.3,25.6 98.1,32.8 121.9,13.6 145.7,30.4 169.4,24.4 193.2,23.2 217.0,11.2" fill="none" stroke="var(--delta-up)" stroke-width="2"
+      <polyline points="3.0,40.0 26.8,4.0 50.6,6.4 74.3,25.6 98.1,32.8 121.9,13.6 145.7,30.4 169.4,24.4 193.2,23.2 217.0,4.0" fill="none" stroke="var(--delta-up)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
-      <circle cx="217.0" cy="11.2" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+      <circle cx="217.0" cy="4.0" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $16.01
-          <span class="down">(-0.69%)</span>
+          <span class="down">(-0.50%)</span>
         </div>
       
     <div class="indicators">
       <div><span class="ind-label">Capitalización</span><span class="ind-val">$32.7B · Large-cap</span></div>
-      <div><span class="ind-label">RSI (14)</span><span class="ind-val">53 · Neutral</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">54 · Neutral</span></div>
       <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Alcista</span></div>
-      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">81% · cerca de máximo anual</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">82% · cerca de máximo anual</span></div>
       <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">10.6 (10.1)</span></div>
       <div><span class="ind-label">P/B</span><span class="ind-val">N/D</span></div>
       <div><span class="ind-label">PEG</span><span class="ind-val">0.77</span></div>
@@ -424,19 +430,19 @@
           <div class="sector">Financiero</div>
         </div>
       </header>
-      <div class="price">$86.94</div>
+      <div class="price">$86.93</div>
       <div class="delta" style="color:var(--delta-up)">
-        ▲ +0.42% <span class="vs">vs apertura $86.58</span>
+        ▲ +0.40% <span class="vs">vs apertura $86.58</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,7.4 26.8,12.1 50.6,35.3 74.3,39.0 98.1,40.0 121.9,29.4 145.7,29.4 169.4,17.5 193.2,4.0 217.0,4.2" fill="none" stroke="var(--delta-up)" stroke-width="2"
+      <polyline points="3.0,7.4 26.8,12.1 50.6,35.3 74.3,39.0 98.1,40.0 121.9,29.4 145.7,29.4 169.4,17.5 193.2,4.0 217.0,4.8" fill="none" stroke="var(--delta-up)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
-      <circle cx="217.0" cy="4.2" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+      <circle cx="217.0" cy="4.8" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $86.01
-          <span class="up">(+1.09%)</span>
+          <span class="up">(+1.06%)</span>
         </div>
       
     <div class="indicators">
@@ -458,26 +464,26 @@
           <div class="sector">Energía Nuclear</div>
         </div>
       </header>
-      <div class="price">$271.33</div>
+      <div class="price">$271.88</div>
       <div class="delta" style="color:var(--delta-down)">
-        ▼ -1.75% <span class="vs">vs apertura $276.17</span>
+        ▼ -1.55% <span class="vs">vs apertura $276.17</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,4.0 26.8,31.2 50.6,27.0 74.3,21.1 98.1,31.0 121.9,22.2 145.7,40.0 169.4,36.7 193.2,24.3 217.0,19.9" fill="none" stroke="var(--delta-down)" stroke-width="2"
+      <polyline points="3.0,4.0 26.8,31.2 50.6,27.0 74.3,21.1 98.1,31.0 121.9,22.2 145.7,40.0 169.4,36.7 193.2,24.3 217.0,16.3" fill="none" stroke="var(--delta-down)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
-      <circle cx="217.0" cy="19.9" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
+      <circle cx="217.0" cy="16.3" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $274.35
-          <span class="down">(-1.10%)</span>
+          <span class="down">(-0.90%)</span>
         </div>
       
     <div class="indicators">
       <div><span class="ind-label">Capitalización</span><span class="ind-val">$96.9B · Large-cap</span></div>
       <div><span class="ind-label">RSI (14)</span><span class="ind-val">58 · Neutral</span></div>
       <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Bajista</span></div>
-      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">23% · cerca de mínimo anual</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">24% · cerca de mínimo anual</span></div>
       <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">23.6 (20.0)</span></div>
       <div><span class="ind-label">P/B</span><span class="ind-val">2.94</span></div>
       <div><span class="ind-label">PEG</span><span class="ind-val">3.74</span></div>
@@ -492,19 +498,19 @@
           <div class="sector">Uranio</div>
         </div>
       </header>
-      <div class="price">$88.36</div>
+      <div class="price">$88.38</div>
       <div class="delta" style="color:var(--delta-down)">
-        ▼ -2.42% <span class="vs">vs apertura $90.55</span>
+        ▼ -2.40% <span class="vs">vs apertura $90.55</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,5.2 26.8,4.0 50.6,14.3 74.3,22.1 98.1,40.0 121.9,26.6 145.7,36.2 169.4,39.8 193.2,39.0 217.0,39.1" fill="none" stroke="var(--delta-down)" stroke-width="2"
+      <polyline points="3.0,5.2 26.8,4.0 50.6,14.3 74.3,22.1 98.1,40.0 121.9,26.6 145.7,36.2 169.4,39.8 193.2,39.0 217.0,38.9" fill="none" stroke="var(--delta-down)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
-      <circle cx="217.0" cy="39.1" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
+      <circle cx="217.0" cy="38.9" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $87.86
-          <span class="up">(+0.57%)</span>
+          <span class="up">(+0.59%)</span>
         </div>
       
     <div class="indicators">
@@ -526,19 +532,19 @@
           <div class="sector">Energía Solar</div>
         </div>
       </header>
-      <div class="price">$201.20</div>
+      <div class="price">$201.47</div>
       <div class="delta" style="color:var(--delta-down)">
-        ▼ -0.94% <span class="vs">vs apertura $203.11</span>
+        ▼ -0.81% <span class="vs">vs apertura $203.11</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,4.0 26.8,15.7 50.6,20.9 74.3,33.2 98.1,40.0 121.9,25.4 145.7,29.8 169.4,30.5 193.2,31.7 217.0,32.2" fill="none" stroke="var(--delta-down)" stroke-width="2"
+      <polyline points="3.0,4.0 26.8,15.7 50.6,20.9 74.3,33.2 98.1,40.0 121.9,25.4 145.7,29.8 169.4,30.5 193.2,31.7 217.0,30.8" fill="none" stroke="var(--delta-down)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
-      <circle cx="217.0" cy="32.2" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
+      <circle cx="217.0" cy="30.8" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $202.82
-          <span class="down">(-0.80%)</span>
+          <span class="down">(-0.67%)</span>
         </div>
       
     <div class="indicators">
@@ -560,24 +566,24 @@
           <div class="sector">Utilities / Renovables</div>
         </div>
       </header>
-      <div class="price">$88.96</div>
+      <div class="price">$88.81</div>
       <div class="delta" style="color:var(--delta-down)">
-        ▼ -0.77% <span class="vs">vs apertura $89.65</span>
+        ▼ -0.94% <span class="vs">vs apertura $89.65</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,4.0 26.8,19.0 50.6,15.7 74.3,16.6 98.1,8.6 121.9,22.2 145.7,31.9 169.4,37.2 193.2,33.4 217.0,40.0" fill="none" stroke="var(--delta-down)" stroke-width="2"
+      <polyline points="3.0,4.0 26.8,16.9 50.6,14.1 74.3,14.9 98.1,7.9 121.9,19.8 145.7,28.2 169.4,32.7 193.2,29.5 217.0,40.0" fill="none" stroke="var(--delta-down)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
       <circle cx="217.0" cy="40.0" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $89.78
-          <span class="down">(-0.91%)</span>
+          <span class="down">(-1.08%)</span>
         </div>
       
     <div class="indicators">
       <div><span class="ind-label">Capitalización</span><span class="ind-val">$185.5B · Large-cap</span></div>
-      <div><span class="ind-label">RSI (14)</span><span class="ind-val">53 · Neutral</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">52 · Neutral</span></div>
       <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Alcista</span></div>
       <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">70% · rango medio</span></div>
       <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">20.0 (20.1)</span></div>
@@ -594,24 +600,24 @@
           <div class="sector">Petróleo & Gas</div>
         </div>
       </header>
-      <div class="price">$18.20</div>
+      <div class="price">$18.23</div>
       <div class="delta" style="color:var(--delta-up)">
-        ▲ +0.17% <span class="vs">vs apertura $18.17</span>
+        ▲ +0.30% <span class="vs">vs apertura $18.17</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,18.3 26.8,8.7 50.6,24.5 74.3,6.5 98.1,21.5 121.9,4.0 145.7,15.5 169.4,20.0 193.2,38.0 217.0,40.0" fill="none" stroke="var(--delta-up)" stroke-width="2"
+      <polyline points="3.0,19.2 26.8,9.0 50.6,25.7 74.3,6.6 98.1,22.6 121.9,4.0 145.7,16.2 169.4,20.9 193.2,40.0 217.0,30.5" fill="none" stroke="var(--delta-up)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
-      <circle cx="217.0" cy="40.0" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+      <circle cx="217.0" cy="30.5" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $18.77
-          <span class="down">(-3.04%)</span>
+          <span class="down">(-2.90%)</span>
         </div>
       
     <div class="indicators">
       <div><span class="ind-label">Capitalización</span><span class="ind-val">$117.3B · Large-cap</span></div>
-      <div><span class="ind-label">RSI (14)</span><span class="ind-val">54 · Neutral</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">55 · Neutral</span></div>
       <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Bajista</span></div>
       <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">64% · rango medio</span></div>
       <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">5.7 (4.4)</span></div>
@@ -628,19 +634,19 @@
           <div class="sector">Generación Eléctrica</div>
         </div>
       </header>
-      <div class="price">$157.50</div>
+      <div class="price">$157.71</div>
       <div class="delta" style="color:var(--delta-down)">
-        ▼ -4.83% <span class="vs">vs apertura $165.50</span>
+        ▼ -4.71% <span class="vs">vs apertura $165.50</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,4.0 26.8,17.2 50.6,24.4 74.3,27.9 98.1,36.4 121.9,27.8 145.7,40.0 169.4,38.4 193.2,31.4 217.0,32.4" fill="none" stroke="var(--delta-down)" stroke-width="2"
+      <polyline points="3.0,4.0 26.8,17.2 50.6,24.4 74.3,27.9 98.1,36.4 121.9,27.8 145.7,40.0 169.4,38.4 193.2,31.4 217.0,30.9" fill="none" stroke="var(--delta-down)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
-      <circle cx="217.0" cy="32.4" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
+      <circle cx="217.0" cy="30.9" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $163.38
-          <span class="down">(-3.60%)</span>
+          <span class="down">(-3.47%)</span>
         </div>
       
     <div class="indicators">
@@ -654,7 +660,7 @@
     </div>
       <div class="badge">🔔 Alerta enviada hoy</div>
     </article>
-    <article class="card">
+    <article class="card crossed">
       <header>
         <div>
           <div class="ticker">AMTX</div>
@@ -662,19 +668,19 @@
           <div class="sector">Biocombustibles</div>
         </div>
       </header>
-      <div class="price">$1.60</div>
+      <div class="price">$1.59</div>
       <div class="delta" style="color:var(--delta-down)">
-        ▼ -2.74% <span class="vs">vs apertura $1.64</span>
+        ▼ -3.05% <span class="vs">vs apertura $1.64</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,4.0 29.8,7.0 56.5,26.0 83.2,36.9 110.0,40.0 136.8,22.0 163.5,28.0 190.2,34.0 217.0,40.0" fill="none" stroke="var(--delta-down)" stroke-width="2"
+      <polyline points="3.0,4.0 26.8,6.8 50.6,24.3 74.3,34.4 98.1,37.2 121.9,20.6 145.7,26.2 169.4,31.7 193.2,37.2 217.0,40.0" fill="none" stroke="var(--delta-down)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
       <circle cx="217.0" cy="40.0" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $1.68
-          <span class="down">(-5.34%)</span>
+          <span class="down">(-5.64%)</span>
         </div>
       
     <div class="indicators">
@@ -686,7 +692,7 @@
       <div><span class="ind-label">P/B</span><span class="ind-val">Patrimonio negativo</span></div>
       <div><span class="ind-label">PEG</span><span class="ind-val">N/D</span></div>
     </div>
-      
+      <div class="badge">🔔 Alerta enviada hoy</div>
     </article>
     <article class="card">
       <header>
@@ -698,17 +704,17 @@
       </header>
       <div class="price">$2.91</div>
       <div class="delta" style="color:var(--delta-down)">
-        ▼ -1.69% <span class="vs">vs apertura $2.96</span>
+        ▼ -1.52% <span class="vs">vs apertura $2.96</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,12.0 26.8,4.0 50.6,8.9 74.3,22.7 98.1,33.4 121.9,24.0 145.7,29.4 169.4,38.7 193.2,36.7 217.0,40.0" fill="none" stroke="var(--delta-down)" stroke-width="2"
+      <polyline points="3.0,12.3 26.8,4.0 50.6,9.1 74.3,23.4 98.1,34.5 121.9,24.7 145.7,30.3 169.4,40.0 193.2,38.0 217.0,40.0" fill="none" stroke="var(--delta-down)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
       <circle cx="217.0" cy="40.0" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $2.91
-          <span class="up">(+0.00%)</span>
+          <span class="up">(+0.17%)</span>
         </div>
       
     <div class="indicators">
@@ -766,17 +772,17 @@
       </header>
       <div class="price">$1.97</div>
       <div class="delta" style="color:var(--delta-down)">
-        ▼ -2.19% <span class="vs">vs apertura $2.01</span>
+        ▼ -2.24% <span class="vs">vs apertura $2.01</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,4.0 26.8,8.8 50.6,25.6 74.3,28.3 98.1,40.0 121.9,30.4 145.7,35.2 169.4,35.2 193.2,32.8 217.0,29.9" fill="none" stroke="var(--delta-down)" stroke-width="2"
+      <polyline points="3.0,4.0 26.8,8.8 50.6,25.6 74.3,28.3 98.1,40.0 121.9,30.4 145.7,35.2 169.4,35.2 193.2,32.8 217.0,30.4" fill="none" stroke="var(--delta-down)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
-      <circle cx="217.0" cy="29.9" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
+      <circle cx="217.0" cy="30.4" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $2.03
-          <span class="down">(-3.15%)</span>
+          <span class="down">(-3.20%)</span>
         </div>
       
     <div class="indicators">
@@ -798,19 +804,19 @@
           <div class="sector">Petróleo & Gas (small-cap)</div>
         </div>
       </header>
-      <div class="price">$3.78</div>
+      <div class="price">$3.77</div>
       <div class="delta" style="color:var(--delta-up)">
-        ▲ +0.53% <span class="vs">vs apertura $3.76</span>
+        ▲ +0.40% <span class="vs">vs apertura $3.76</span>
       </div>
       <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
-      <polyline points="3.0,12.7 26.8,4.0 50.6,10.5 74.3,19.2 98.1,28.3 121.9,34.4 145.7,40.0 169.4,32.2 193.2,23.5 217.0,21.3" fill="none" stroke="var(--delta-up)" stroke-width="2"
+      <polyline points="3.0,12.7 26.8,4.0 50.6,10.5 74.3,19.2 98.1,28.3 121.9,34.4 145.7,40.0 169.4,32.2 193.2,23.5 217.0,23.5" fill="none" stroke="var(--delta-up)" stroke-width="2"
         stroke-linejoin="round" stroke-linecap="round" />
-      <circle cx="217.0" cy="21.3" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+      <circle cx="217.0" cy="23.5" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
     </svg>
       
         <div class="baseline-row">
           Desde que lo monitoreas (2026-07-25): $3.94
-          <span class="down">(-4.19%)</span>
+          <span class="down">(-4.31%)</span>
         </div>
       
     <div class="indicators">
