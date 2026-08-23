@@ -144,11 +144,21 @@
 </style>
 </head>
 <body>
-  
-  <div class="ticker-tape"><div class="ticker-tape__track"></div></div>
+  <div class="fx-banner">
+        <span class="fx-pill">
+          <span class="fx-label">USD → COP</span>
+          <span class="fx-rate">$ 3,042.81</span>
+          <span class="fx-delta down">▼ -1.03% hoy</span>
+        </span>
+        <span class="fx-pill">
+          <span class="fx-label">EUR → COP</span>
+          <span class="fx-rate">$ 3,553.87</span>
+          <span class="fx-delta up">▲ +3.88% hoy</span>
+        </span></div>
+  <div class="ticker-tape"><div class="ticker-tape__track"><span class="ticker-tape__item"><strong>BYDDF</strong> $11.80 <span class="up">▲ +0.85%</span></span><span class="ticker-tape__item"><strong>EC</strong> $17.53 <span class="down">▼ -0.34%</span></span><span class="ticker-tape__item"><strong>CIB</strong> $101.43 <span class="up">▲ +1.74%</span></span><span class="ticker-tape__item"><strong>CEG</strong> $272.88 <span class="down">▼ -0.97%</span></span><span class="ticker-tape__item"><strong>CCJ</strong> $102.51 <span class="up">▲ +4.84%</span></span><span class="ticker-tape__item"><strong>FSLR</strong> $214.28 <span class="down">▼ -0.33%</span></span><span class="ticker-tape__item"><strong>NEE</strong> $83.65 <span class="down">▼ -1.82%</span></span><span class="ticker-tape__item"><strong>PBR</strong> $19.15 <span class="up">▲ +0.05%</span></span><span class="ticker-tape__item"><strong>VST</strong> $136.21 <span class="down">▼ -2.70%</span></span><span class="ticker-tape__item"><strong>AMTX</strong> $2.07 <span class="up">▲ +7.25%</span></span><span class="ticker-tape__item"><strong>DNN</strong> $3.50 <span class="up">▲ +8.36%</span></span><span class="ticker-tape__item"><strong>ENVX</strong> $3.38 <span class="up">▲ +0.90%</span></span><span class="ticker-tape__item"><strong>CLNE</strong> $1.62 <span class="up">▲ +0.00%</span></span><span class="ticker-tape__item"><strong>AMPY</strong> $4.82 <span class="down">▼ -1.63%</span></span><span class="ticker-tape__item"><strong>BYDDF</strong> $11.80 <span class="up">▲ +0.85%</span></span><span class="ticker-tape__item"><strong>EC</strong> $17.53 <span class="down">▼ -0.34%</span></span><span class="ticker-tape__item"><strong>CIB</strong> $101.43 <span class="up">▲ +1.74%</span></span><span class="ticker-tape__item"><strong>CEG</strong> $272.88 <span class="down">▼ -0.97%</span></span><span class="ticker-tape__item"><strong>CCJ</strong> $102.51 <span class="up">▲ +4.84%</span></span><span class="ticker-tape__item"><strong>FSLR</strong> $214.28 <span class="down">▼ -0.33%</span></span><span class="ticker-tape__item"><strong>NEE</strong> $83.65 <span class="down">▼ -1.82%</span></span><span class="ticker-tape__item"><strong>PBR</strong> $19.15 <span class="up">▲ +0.05%</span></span><span class="ticker-tape__item"><strong>VST</strong> $136.21 <span class="down">▼ -2.70%</span></span><span class="ticker-tape__item"><strong>AMTX</strong> $2.07 <span class="up">▲ +7.25%</span></span><span class="ticker-tape__item"><strong>DNN</strong> $3.50 <span class="up">▲ +8.36%</span></span><span class="ticker-tape__item"><strong>ENVX</strong> $3.38 <span class="up">▲ +0.90%</span></span><span class="ticker-tape__item"><strong>CLNE</strong> $1.62 <span class="up">▲ +0.00%</span></span><span class="ticker-tape__item"><strong>AMPY</strong> $4.82 <span class="down">▼ -1.63%</span></span></div></div>
   <div class="wrap top-pad">
     <h1>Panel de energía · StockWatcher</h1>
-    <p class="subtitle">Umbral de alerta: ±3.0% vs apertura del día · Actualizado 2026-08-23 15:53 · Próxima revisión en ~15 min</p>
+    <p class="subtitle">Umbral de alerta: ±3.0% vs apertura del día · Actualizado 2026-08-23 16:09 · Próxima revisión en ~15 min</p>
 
     <div class="view-toggle">
       <button type="button" class="view-btn active" data-view="intl" onclick="setView('intl')">🌎 Internacional</button>
@@ -164,11 +174,85 @@
 
     <div id="view-intl">
       <h2 class="section">Tendencia combinada</h2>
-      <div class="chart-empty">
-          Aún no hay suficiente historial para dibujar la curva de tendencia
-          (se necesita más de un día desde que empezaste a monitorear cada activo).
-          Vuelve mañana y esta sección se irá llenando sola.
-        </div>
+      
+    <div class="chart-legend"><span class="chip" data-symbol="BYDDF">BYDDF</span><span class="chip" data-symbol="EC">EC</span><span class="chip" data-symbol="CIB">CIB</span><span class="chip" data-symbol="CEG">CEG</span><span class="chip" data-symbol="CCJ">CCJ</span><span class="chip" data-symbol="FSLR">FSLR</span><span class="chip" data-symbol="NEE">NEE</span><span class="chip" data-symbol="PBR">PBR</span><span class="chip" data-symbol="VST">VST</span><span class="chip" data-symbol="AMTX">AMTX</span><span class="chip" data-symbol="DNN">DNN</span><span class="chip" data-symbol="ENVX">ENVX</span><span class="chip" data-symbol="CLNE">CLNE</span><span class="chip" data-symbol="AMPY">AMPY</span></div>
+    <div class="chart-wrap"><svg width="100%" height="300" viewBox="0 0 1040 300" class="combined-chart" preserveAspectRatio="xMidYMid meet">
+      <line x1="40" y1="148.4" x2="1024" y2="148.4" class="zero-line" />
+      <text x="34" y="148.4" class="axis-label" text-anchor="end" dominant-baseline="middle">0%</text>
+      
+        <g class="line-group" data-symbol="BYDDF">
+          <polyline points="40.0,141.5 91.8,133.0 143.6,116.4 195.4,113.1 247.2,117.2 298.9,108.7 350.7,113.9 402.5,120.0 454.3,133.8 506.1,131.8 557.9,120.4 609.7,135.4 661.5,138.3 713.3,144.8 765.1,141.5 816.8,137.1 868.6,133.8 920.4,132.2 972.2,126.9 1024.0,120.8" class="trend-line" />
+          <circle cx="1024.0" cy="120.8" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="120.8" class="trend-label" dominant-baseline="middle">BYDDF +6.1%</text>
+        </g>
+        <g class="line-group" data-symbol="EC">
+          <polyline points="40.0,154.3 91.8,153.5 143.6,137.4 195.4,119.4 247.2,127.0 298.9,131.8 350.7,140.0 402.5,137.7 454.3,109.2 506.1,126.7 557.9,119.1 609.7,120.2 661.5,121.6 713.3,114.6 765.1,115.7 816.8,101.6 868.6,101.4 920.4,95.4 972.2,102.2 1024.0,105.6" class="trend-line" />
+          <circle cx="1024.0" cy="105.6" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="105.6" class="trend-label" dominant-baseline="middle">EC +9.5%</text>
+        </g>
+        <g class="line-group" data-symbol="CIB">
+          <polyline points="40.0,138.3 91.8,132.4 143.6,130.3 195.4,107.1 247.2,114.3 298.9,121.7 350.7,127.4 402.5,126.8 454.3,126.2 506.1,133.5 557.9,119.8 609.7,85.5 661.5,97.1 713.3,95.3 765.1,94.1 816.8,93.2 868.6,87.4 920.4,76.8 972.2,82.1 1024.0,67.5" class="trend-line" />
+          <circle cx="1024.0" cy="67.5" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="67.5" class="trend-label" dominant-baseline="middle">CIB +17.9%</text>
+        </g>
+        <g class="line-group" data-symbol="CEG">
+          <polyline points="40.0,156.3 91.8,173.0 143.6,176.0 195.4,166.8 247.2,168.2 298.9,150.2 350.7,160.8 402.5,164.3 454.3,170.9 506.1,156.4 557.9,155.5 609.7,142.5 661.5,142.0 713.3,142.1 765.1,135.7 816.8,142.8 868.6,160.8 920.4,148.7 972.2,150.8 1024.0,150.8" class="trend-line" />
+          <circle cx="1024.0" cy="150.8" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="150.8" class="trend-label" dominant-baseline="middle">CEG -0.5%</text>
+        </g>
+        <g class="line-group" data-symbol="CCJ">
+          <polyline points="40.0,140.8 91.8,153.0 143.6,165.3 195.4,146.5 247.2,156.0 298.9,138.9 350.7,121.6 402.5,115.5 454.3,118.8 506.1,99.5 557.9,99.9 609.7,92.6 661.5,91.1 713.3,97.6 765.1,97.7 816.8,93.4 868.6,106.5 920.4,96.4 972.2,108.7 1024.0,73.2" class="trend-line" />
+          <circle cx="1024.0" cy="73.2" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="73.2" class="trend-label" dominant-baseline="middle">CCJ +16.7%</text>
+        </g>
+        <g class="line-group" data-symbol="FSLR">
+          <polyline points="40.0,141.7 91.8,148.9 143.6,156.4 195.4,141.3 247.2,130.2 298.9,81.9 350.7,57.6 402.5,72.8 454.3,56.5 506.1,43.3 557.9,67.2 609.7,63.7 661.5,95.1 713.3,102.0 765.1,97.8 816.8,115.0 868.6,110.2 920.4,104.9 972.2,123.4 1024.0,122.9" class="trend-line" />
+          <circle cx="1024.0" cy="122.9" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="122.9" class="trend-label" dominant-baseline="middle">FSLR +5.7%</text>
+        </g>
+        <g class="line-group" data-symbol="NEE">
+          <polyline points="40.0,153.2 91.8,150.9 143.6,155.1 195.4,157.7 247.2,162.8 298.9,164.7 350.7,161.4 402.5,167.9 454.3,174.5 506.1,174.2 557.9,174.0 609.7,168.7 661.5,168.5 713.3,167.4 765.1,166.5 816.8,166.3 868.6,166.3 920.4,167.9 972.2,172.3 1024.0,179.2" class="trend-line" />
+          <circle cx="1024.0" cy="179.2" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="179.2" class="trend-label" dominant-baseline="middle">NEE -6.8%</text>
+        </g>
+        <g class="line-group" data-symbol="PBR">
+          <polyline points="40.0,166.9 91.8,165.2 143.6,152.7 195.4,140.0 247.2,133.3 298.9,141.4 350.7,149.6 402.5,158.3 454.3,154.4 506.1,167.9 557.9,159.0 609.7,168.6 661.5,172.7 713.3,169.6 765.1,169.8 816.8,160.9 868.6,162.6 920.4,153.9 972.2,142.7 1024.0,139.3" class="trend-line" />
+          <circle cx="1024.0" cy="139.3" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="139.3" class="trend-label" dominant-baseline="middle">PBR +2.0%</text>
+        </g>
+        <g class="line-group" data-symbol="VST">
+          <polyline points="40.0,165.8 91.8,189.1 143.6,205.2 195.4,189.2 247.2,190.4 298.9,169.0 350.7,204.1 402.5,211.4 454.3,209.2 506.1,211.4 557.9,205.1 609.7,199.4 661.5,194.5 713.3,195.3 765.1,190.5 816.8,196.1 868.6,211.6 920.4,205.5 972.2,215.9 1024.0,223.5" class="trend-line" />
+          <circle cx="1024.0" cy="223.5" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="223.5" class="trend-label" dominant-baseline="middle">VST -16.6%</text>
+        </g>
+        <g class="line-group" data-symbol="AMTX">
+          <polyline points="40.0,183.2 91.8,203.3 143.6,222.1 195.4,181.9 247.2,195.3 298.9,192.6 350.7,165.8 402.5,184.6 454.3,163.1 506.1,139.0 557.9,155.1 609.7,144.4 661.5,132.4 713.3,133.7 765.1,125.7 816.8,117.6 868.6,101.6 920.4,101.6 972.2,85.5 1024.0,45.3" class="trend-line" />
+          <circle cx="1024.0" cy="45.3" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="45.3" class="trend-label" dominant-baseline="middle">AMTX +22.8%</text>
+        </g>
+        <g class="line-group" data-symbol="DNN">
+          <polyline points="40.0,146.9 91.8,173.2 143.6,182.5 195.4,146.9 247.2,163.9 298.9,153.1 350.7,137.6 402.5,120.5 454.3,114.3 506.1,100.4 557.9,94.1 609.7,86.4 661.5,89.5 713.3,94.1 765.1,98.8 816.8,105.0 868.6,111.2 920.4,100.4 972.2,112.8 1024.0,56.9" class="trend-line" />
+          <circle cx="1024.0" cy="56.9" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="56.9" class="trend-label" dominant-baseline="middle">DNN +20.3%</text>
+        </g>
+        <g class="line-group" data-symbol="ENVX">
+          <polyline points="40.0,116.4 91.8,146.1 143.6,179.3 195.4,122.1 247.2,132.4 298.9,117.6 350.7,97.0 402.5,109.6 454.3,113.0 506.1,62.7 557.9,69.6 609.7,47.9 661.5,59.3 713.3,93.6 765.1,98.2 816.8,189.0 868.6,241.5 920.4,211.2 972.2,226.1 1024.0,213.5" class="trend-line" />
+          <circle cx="1024.0" cy="213.5" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="213.5" class="trend-label" dominant-baseline="middle">ENVX -14.4%</text>
+        </g>
+        <g class="line-group" data-symbol="CLNE">
+          <polyline points="40.0,164.0 91.8,175.1 143.6,179.5 195.4,170.6 247.2,168.4 298.9,186.2 350.7,184.0 402.5,181.8 454.3,186.2 506.1,248.4 557.9,241.8 609.7,219.5 661.5,212.9 713.3,201.8 765.1,192.9 816.8,230.7 868.6,241.8 920.4,250.7 972.2,241.8 1024.0,239.6" class="trend-line" />
+          <circle cx="1024.0" cy="239.6" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="239.6" class="trend-label" dominant-baseline="middle">CLNE -20.2%</text>
+        </g>
+        <g class="line-group" data-symbol="AMPY">
+          <polyline points="40.0,170.2 91.8,179.3 143.6,162.2 195.4,170.2 247.2,151.9 298.9,140.4 350.7,143.8 402.5,155.3 454.3,132.4 506.1,138.1 557.9,123.2 609.7,83.1 661.5,96.9 713.3,46.5 765.1,52.2 816.8,47.6 868.6,47.6 920.4,51.1 972.2,37.3 1024.0,47.6" class="trend-line" />
+          <circle cx="1024.0" cy="47.6" r="3.5" class="trend-dot" />
+          <text x="1030.0" y="47.6" class="trend-label" dominant-baseline="middle">AMPY +22.3%</text>
+        </g>
+    </svg></div>
+    <p class="chart-caption">Variación % de cada activo desde el primer día en que lo empezaste a monitorear. Pasa el mouse sobre un ticker para resaltarlo.</p>
+    
 
       <h2 class="section">Resumen</h2>
       
@@ -180,12 +264,628 @@
           <th class="num">RSI 14</th><th class="num">P/E</th>
         </tr>
       </thead>
-      <tbody></tbody>
+      <tbody>
+        <tr>
+          <td class="tkr">DNN</td>
+          <td class="name-col">Denison Mines Corp.</td>
+          <td class="num">$3.2B</td>
+          <td class="num">$3.50</td>
+          <td class="num up">+8.36%</td>
+          <td class="num up">+20.27%</td>
+          <td class="num">65</td>
+          <td class="num">N/D</td>
+        </tr>
+        <tr>
+          <td class="tkr">AMTX</td>
+          <td class="name-col">Aemetis, Inc.</td>
+          <td class="num">$149M</td>
+          <td class="num">$2.07</td>
+          <td class="num up">+7.25%</td>
+          <td class="num up">+22.85%</td>
+          <td class="num">68</td>
+          <td class="num">N/D</td>
+        </tr>
+        <tr>
+          <td class="tkr">CCJ</td>
+          <td class="name-col">Cameco Corporation</td>
+          <td class="num">$44.6B</td>
+          <td class="num">$102.51</td>
+          <td class="num up">+4.84%</td>
+          <td class="num up">+16.67%</td>
+          <td class="num">62</td>
+          <td class="num">176.7</td>
+        </tr>
+        <tr>
+          <td class="tkr">VST</td>
+          <td class="name-col">Vistra Corp.</td>
+          <td class="num">$45.7B</td>
+          <td class="num">$136.21</td>
+          <td class="num down">-2.70%</td>
+          <td class="num down">-16.63%</td>
+          <td class="num">37</td>
+          <td class="num">23.0</td>
+        </tr>
+        <tr>
+          <td class="tkr">NEE</td>
+          <td class="name-col">NextEra Energy, Inc.</td>
+          <td class="num">$174.5B</td>
+          <td class="num">$83.65</td>
+          <td class="num down">-1.82%</td>
+          <td class="num down">-6.83%</td>
+          <td class="num">32</td>
+          <td class="num">18.8</td>
+        </tr>
+        <tr>
+          <td class="tkr">CIB</td>
+          <td class="name-col">Grupo Cibest S.A.</td>
+          <td class="num">$24.0B</td>
+          <td class="num">$101.43</td>
+          <td class="num up">+1.74%</td>
+          <td class="num up">+17.93%</td>
+          <td class="num">74</td>
+          <td class="num">9.9</td>
+        </tr>
+        <tr>
+          <td class="tkr">AMPY</td>
+          <td class="name-col">Amplify Energy Corp.</td>
+          <td class="num">$200M</td>
+          <td class="num">$4.82</td>
+          <td class="num down">-1.63%</td>
+          <td class="num up">+22.34%</td>
+          <td class="num">65</td>
+          <td class="num">9.5</td>
+        </tr>
+        <tr>
+          <td class="tkr">CEG</td>
+          <td class="name-col">Constellation Energy Corporation</td>
+          <td class="num">$96.7B</td>
+          <td class="num">$272.88</td>
+          <td class="num down">-0.97%</td>
+          <td class="num down">-0.54%</td>
+          <td class="num">53</td>
+          <td class="num">26.7</td>
+        </tr>
+        <tr>
+          <td class="tkr">ENVX</td>
+          <td class="name-col">Enovix Corporation</td>
+          <td class="num">$742M</td>
+          <td class="num">$3.38</td>
+          <td class="num up">+0.90%</td>
+          <td class="num down">-14.43%</td>
+          <td class="num">36</td>
+          <td class="num">N/D</td>
+        </tr>
+        <tr>
+          <td class="tkr">BYDDF</td>
+          <td class="name-col">BYD Co., Ltd.</td>
+          <td class="num">$107.6B</td>
+          <td class="num">$11.80</td>
+          <td class="num up">+0.85%</td>
+          <td class="num up">+6.12%</td>
+          <td class="num">59</td>
+          <td class="num">26.8</td>
+        </tr>
+        <tr>
+          <td class="tkr">EC</td>
+          <td class="name-col">Ecopetrol S.A.</td>
+          <td class="num">$36.0B</td>
+          <td class="num">$17.53</td>
+          <td class="num down">-0.34%</td>
+          <td class="num up">+9.49%</td>
+          <td class="num">60</td>
+          <td class="num">11.2</td>
+        </tr>
+        <tr>
+          <td class="tkr">FSLR</td>
+          <td class="name-col">First Solar, Inc.</td>
+          <td class="num">$23.0B</td>
+          <td class="num">$214.28</td>
+          <td class="num down">-0.33%</td>
+          <td class="num up">+5.65%</td>
+          <td class="num">43</td>
+          <td class="num">13.2</td>
+        </tr>
+        <tr>
+          <td class="tkr">PBR</td>
+          <td class="name-col">Petróleo Brasileiro S.A. (Petrobras)</td>
+          <td class="num">$123.4B</td>
+          <td class="num">$19.15</td>
+          <td class="num up">+0.05%</td>
+          <td class="num up">+2.02%</td>
+          <td class="num">61</td>
+          <td class="num">4.8</td>
+        </tr>
+        <tr>
+          <td class="tkr">CLNE</td>
+          <td class="name-col">Clean Energy Fuels Corp.</td>
+          <td class="num">$357M</td>
+          <td class="num">$1.62</td>
+          <td class="num up">+0.00%</td>
+          <td class="num down">-20.20%</td>
+          <td class="num">37</td>
+          <td class="num">N/D</td>
+        </tr></tbody>
     </table>
 
       <h2 class="section">Detalle por activo</h2>
       <div class="grid">
         
+    <article class="card">
+      <header>
+        <div>
+          <div class="ticker">BYDDF</div>
+          <div class="name">BYD Co., Ltd.</div>
+          <div class="sector">EV / Baterías</div>
+        </div>
+      </header>
+      <div class="price">$11.80</div>
+      <div class="delta" style="color:var(--delta-up)">
+        ▲ +0.85% <span class="vs">vs apertura $11.70</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,4.0 74.3,40.0 145.7,40.0 217.0,40.0" fill="none" stroke="var(--delta-up)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="40.0" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $11.12
+          <span class="up">(+6.12%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$107.6B · Large-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">59 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Alcista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">40% · rango medio</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">26.8 (14.1)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">3.11</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">0.77</span></div>
+    </div>
+      
+    </article>
+    <article class="card">
+      <header>
+        <div>
+          <div class="ticker">EC</div>
+          <div class="name">Ecopetrol S.A.</div>
+          <div class="sector">Petróleo & Gas</div>
+        </div>
+      </header>
+      <div class="price">$17.53</div>
+      <div class="delta" style="color:var(--delta-down)">
+        ▼ -0.34% <span class="vs">vs apertura $17.59</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,34.1 11.6,11.8 20.1,15.7 28.7,12.8 37.2,21.5 45.8,27.4 54.4,34.6 62.9,40.0 71.5,33.2 80.0,29.3 88.6,33.2 97.2,27.4 105.7,17.6 114.3,23.5 122.8,26.4 131.4,39.0 140.0,37.1 148.5,35.1 157.1,23.5 165.6,11.8 174.2,7.9 182.8,4.0 191.3,8.9 199.9,10.8 208.4,10.8 217.0,13.7" fill="none" stroke="var(--delta-down)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="13.7" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $16.01
+          <span class="up">(+9.49%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$36.0B · Large-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">60 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Alcista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">93% · cerca de máximo anual</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">11.2 (11.5)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">N/D</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">0.77</span></div>
+    </div>
+      
+    </article>
+    <article class="card">
+      <header>
+        <div>
+          <div class="ticker">CIB</div>
+          <div class="name">Grupo Cibest S.A.</div>
+          <div class="sector">Financiero</div>
+        </div>
+      </header>
+      <div class="price">$101.43</div>
+      <div class="delta" style="color:var(--delta-up)">
+        ▲ +1.74% <span class="vs">vs apertura $99.70</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,40.0 11.6,26.4 20.1,31.7 28.7,26.0 37.2,27.7 45.8,26.0 54.4,24.0 62.9,19.9 71.5,16.0 80.0,12.7 88.6,18.5 97.2,21.1 105.7,25.2 114.3,26.5 122.8,25.0 131.4,24.0 140.0,18.0 148.5,13.5 157.1,5.6 165.6,5.4 174.2,5.5 182.8,7.9 191.3,4.0 199.9,6.8 208.4,10.1 217.0,17.7" fill="none" stroke="var(--delta-up)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="17.7" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $86.01
+          <span class="up">(+17.93%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$24.0B · Large-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">74 · Sobrecompra</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Alcista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">98% · cerca de máximo anual</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">9.9 (8.8)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">N/D</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">0.43</span></div>
+    </div>
+      
+    </article>
+    <article class="card">
+      <header>
+        <div>
+          <div class="ticker">CEG</div>
+          <div class="name">Constellation Energy Corporation</div>
+          <div class="sector">Energía Nuclear</div>
+        </div>
+      </header>
+      <div class="price">$272.88</div>
+      <div class="delta" style="color:var(--delta-down)">
+        ▼ -0.97% <span class="vs">vs apertura $275.54</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,32.9 11.6,39.5 20.1,34.6 28.7,19.6 37.2,27.0 45.8,20.8 54.4,17.5 62.9,11.8 71.5,5.0 80.0,4.0 88.6,13.3 97.2,14.1 105.7,7.2 114.3,9.2 122.8,9.2 131.4,10.8 140.0,11.1 148.5,11.4 157.1,20.8 165.6,18.9 174.2,27.5 182.8,35.6 191.3,34.0 199.9,40.0 208.4,28.5 217.0,32.9" fill="none" stroke="var(--delta-down)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="32.9" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $274.35
+          <span class="down">(-0.54%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$96.7B · Large-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">53 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Alcista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">24% · cerca de mínimo anual</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">26.7 (20.5)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">3.03</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">3.74</span></div>
+    </div>
+      
+    </article>
+    <article class="card crossed">
+      <header>
+        <div>
+          <div class="ticker">CCJ</div>
+          <div class="name">Cameco Corporation</div>
+          <div class="sector">Uranio</div>
+        </div>
+      </header>
+      <div class="price">$102.51</div>
+      <div class="delta" style="color:var(--delta-up)">
+        ▲ +4.84% <span class="vs">vs apertura $97.78</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,30.8 11.6,12.9 20.1,30.6 28.7,30.8 37.2,37.5 45.8,40.0 54.4,39.5 62.9,36.8 71.5,28.3 80.0,28.2 88.6,33.1 97.2,28.0 105.7,21.3 114.3,22.0 122.8,22.3 131.4,26.5 140.0,19.0 148.5,20.5 157.1,25.8 165.6,21.4 174.2,21.9 182.8,12.6 191.3,12.0 199.9,14.6 208.4,7.7 217.0,4.0" fill="none" stroke="var(--delta-up)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="4.0" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $87.86
+          <span class="up">(+16.67%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$44.6B · Large-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">62 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Bajista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">48% · rango medio</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">176.7 (54.2)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">8.62</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">1.92</span></div>
+    </div>
+      <div class="badge">🔔 Alerta enviada hoy</div>
+    </article>
+    <article class="card">
+      <header>
+        <div>
+          <div class="ticker">FSLR</div>
+          <div class="name">First Solar, Inc.</div>
+          <div class="sector">Energía Solar</div>
+        </div>
+      </header>
+      <div class="price">$214.28</div>
+      <div class="delta" style="color:var(--delta-down)">
+        ▼ -0.33% <span class="vs">vs apertura $214.99</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,37.6 11.6,28.2 20.1,22.4 28.7,25.9 37.2,27.9 45.8,20.7 54.4,14.3 62.9,17.1 71.5,7.6 80.0,4.0 88.6,16.4 97.2,16.3 105.7,19.6 114.3,17.0 122.8,29.7 131.4,35.4 140.0,34.1 148.5,36.3 157.1,35.1 165.6,36.4 174.2,34.4 182.8,29.6 191.3,30.1 199.9,29.8 208.4,40.0 217.0,38.2" fill="none" stroke="var(--delta-down)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="38.2" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $202.82
+          <span class="up">(+5.65%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$23.0B · Large-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">43 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Bajista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">23% · cerca de mínimo anual</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">13.2 (9.3)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">2.23</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">0.58</span></div>
+    </div>
+      
+    </article>
+    <article class="card">
+      <header>
+        <div>
+          <div class="ticker">NEE</div>
+          <div class="name">NextEra Energy, Inc.</div>
+          <div class="sector">Utilities / Renovables</div>
+        </div>
+      </header>
+      <div class="price">$83.65</div>
+      <div class="delta" style="color:var(--delta-down)">
+        ▼ -1.82% <span class="vs">vs apertura $85.20</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,6.7 11.6,4.5 20.1,4.0 28.7,12.1 37.2,19.7 45.8,15.0 54.4,15.8 62.9,19.0 71.5,17.1 80.0,13.4 88.6,17.1 97.2,14.9 105.7,17.6 114.3,22.6 122.8,27.3 131.4,31.2 140.0,29.1 148.5,29.9 157.1,34.2 165.6,31.6 174.2,31.1 182.8,37.0 191.3,35.2 199.9,38.7 208.4,35.4 217.0,40.0" fill="none" stroke="var(--delta-down)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="40.0" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $89.78
+          <span class="down">(-6.83%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$174.5B · Large-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">32 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Bajista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">52% · rango medio</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">18.8 (19.0)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">3.05</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">1.83</span></div>
+    </div>
+      
+    </article>
+    <article class="card">
+      <header>
+        <div>
+          <div class="ticker">PBR</div>
+          <div class="name">Petróleo Brasileiro S.A. (Petrobras)</div>
+          <div class="sector">Petróleo & Gas</div>
+        </div>
+      </header>
+      <div class="price">$19.15</div>
+      <div class="delta" style="color:var(--delta-up)">
+        ▲ +0.05% <span class="vs">vs apertura $19.14</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,15.2 11.6,10.4 20.1,24.0 28.7,9.6 37.2,18.4 45.8,25.6 54.4,26.4 62.9,30.0 71.5,24.0 80.0,23.2 88.6,25.6 97.2,31.2 105.7,23.2 114.3,27.2 122.8,28.0 131.4,36.0 140.0,40.0 148.5,39.2 157.1,13.6 165.6,4.0 174.2,12.0 182.8,12.8 191.3,22.4 199.9,21.6 208.4,25.6 217.0,22.4" fill="none" stroke="var(--delta-up)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="22.4" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $18.77
+          <span class="up">(+2.02%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$123.4B · Large-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">61 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Alcista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">73% · rango medio</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">4.8 (4.8)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">1.43</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">4.79</span></div>
+    </div>
+      
+    </article>
+    <article class="card">
+      <header>
+        <div>
+          <div class="ticker">VST</div>
+          <div class="name">Vistra Corp.</div>
+          <div class="sector">Generación Eléctrica</div>
+        </div>
+      </header>
+      <div class="price">$136.21</div>
+      <div class="delta" style="color:var(--delta-down)">
+        ▼ -2.70% <span class="vs">vs apertura $139.99</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,4.0 11.6,18.2 20.1,25.1 28.7,22.6 37.2,30.8 45.8,28.4 54.4,26.7 62.9,28.6 71.5,22.4 80.0,22.6 88.6,28.5 97.2,27.8 105.7,24.6 114.3,27.6 122.8,28.0 131.4,28.8 140.0,27.6 148.5,26.3 157.1,27.6 165.6,28.1 174.2,31.1 182.8,37.3 191.3,37.6 199.9,37.2 208.4,35.6 217.0,40.0" fill="none" stroke="var(--delta-down)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="40.0" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $163.38
+          <span class="down">(-16.63%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$45.7B · Large-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">37 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Bajista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">4% · cerca de mínimo anual</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">23.0 (13.1)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">15.22</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">0.39</span></div>
+    </div>
+      
+    </article>
+    <article class="card crossed">
+      <header>
+        <div>
+          <div class="ticker">AMTX</div>
+          <div class="name">Aemetis, Inc.</div>
+          <div class="sector">Biocombustibles</div>
+        </div>
+      </header>
+      <div class="price">$2.07</div>
+      <div class="delta" style="color:var(--delta-up)">
+        ▲ +7.25% <span class="vs">vs apertura $1.93</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,40.0 11.6,31.5 20.1,40.0 28.7,35.8 37.2,31.5 45.8,23.1 54.4,25.2 62.9,25.2 71.5,18.8 80.0,11.0 88.6,4.0 97.2,8.2 105.7,14.6 114.3,16.7 122.8,20.9 131.4,18.8 140.0,14.6 148.5,16.7 157.1,16.7 165.6,20.4 174.2,20.9 182.8,16.4 191.3,14.6 199.9,13.7 208.4,14.6 217.0,12.5" fill="none" stroke="var(--delta-up)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="12.5" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $1.68
+          <span class="up">(+22.85%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$149M · Micro-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">68 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Bajista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">31% · rango medio</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">N/D (-4.2)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">Patrimonio negativo</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">N/D</span></div>
+    </div>
+      <div class="badge">🔔 Alerta enviada hoy</div>
+    </article>
+    <article class="card crossed">
+      <header>
+        <div>
+          <div class="ticker">DNN</div>
+          <div class="name">Denison Mines Corp.</div>
+          <div class="sector">Uranio</div>
+        </div>
+      </header>
+      <div class="price">$3.50</div>
+      <div class="delta" style="color:var(--delta-up)">
+        ▲ +8.36% <span class="vs">vs apertura $3.23</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,37.7 11.6,28.4 20.1,38.8 28.7,40.0 37.2,36.5 45.8,33.0 54.4,26.1 62.9,22.6 71.5,13.3 80.0,8.7 88.6,15.7 97.2,7.3 105.7,4.0 114.3,8.7 122.8,13.3 131.4,19.1 140.0,18.0 148.5,20.3 157.1,19.4 165.6,17.1 174.2,15.7 182.8,9.9 191.3,8.7 199.9,9.8 208.4,7.5 217.0,7.5" fill="none" stroke="var(--delta-up)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="7.5" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $2.91
+          <span class="up">(+20.27%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$3.2B · Mid-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">65 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Bajista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">62% · rango medio</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">N/D (-88.8)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">15.12</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">N/D</span></div>
+    </div>
+      <div class="badge">🔔 Alerta enviada hoy</div>
+    </article>
+    <article class="card">
+      <header>
+        <div>
+          <div class="ticker">ENVX</div>
+          <div class="name">Enovix Corporation</div>
+          <div class="sector">Baterías (ánodo de silicio)</div>
+        </div>
+      </header>
+      <div class="price">$3.38</div>
+      <div class="delta" style="color:var(--delta-up)">
+        ▲ +0.90% <span class="vs">vs apertura $3.35</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,29.6 11.6,14.8 20.1,34.6 28.7,32.8 37.2,40.0 45.8,27.4 54.4,18.4 62.9,22.0 71.5,4.0 80.0,14.8 88.6,18.4 97.2,22.0 105.7,23.8 114.3,23.8 122.8,32.8 131.4,34.6 140.0,23.3 148.5,20.2 157.1,18.4 165.6,15.3 174.2,18.4 182.8,13.0 191.3,11.2 199.9,7.6 208.4,7.6 217.0,20.2" fill="none" stroke="var(--delta-up)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="20.2" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $3.95
+          <span class="down">(-14.43%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$742M · Small-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">36 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Bajista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">3% · cerca de mínimo anual</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">N/D (-5.3)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">3.44</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">N/D</span></div>
+    </div>
+      
+    </article>
+    <article class="card">
+      <header>
+        <div>
+          <div class="ticker">CLNE</div>
+          <div class="name">Clean Energy Fuels Corp.</div>
+          <div class="sector">Gas Natural Renovable</div>
+        </div>
+      </header>
+      <div class="price">$1.62</div>
+      <div class="delta" style="color:var(--delta-up)">
+        ▲ +0.00% <span class="vs">vs apertura $1.62</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,4.0 11.6,24.9 20.1,26.8 28.7,40.0 37.2,40.0 45.8,32.4 54.4,40.0 62.9,24.9 71.5,24.9 80.0,24.9 88.6,31.1 97.2,32.4 105.7,32.4 114.3,19.1 122.8,24.9 131.4,32.4 140.0,24.9 148.5,24.9 157.1,30.8 165.6,24.9 174.2,24.9 182.8,24.9 191.3,24.9 199.9,31.4 208.4,32.4 217.0,17.3" fill="none" stroke="var(--delta-up)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="17.3" r="3" fill="var(--delta-up)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $2.03
+          <span class="down">(-20.20%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$357M · Small-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">37 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Bajista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">5% · cerca de mínimo anual</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">N/D (-46.3)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">0.65</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">4.72</span></div>
+    </div>
+      
+    </article>
+    <article class="card">
+      <header>
+        <div>
+          <div class="ticker">AMPY</div>
+          <div class="name">Amplify Energy Corp.</div>
+          <div class="sector">Petróleo & Gas (small-cap)</div>
+        </div>
+      </header>
+      <div class="price">$4.82</div>
+      <div class="delta" style="color:var(--delta-down)">
+        ▼ -1.63% <span class="vs">vs apertura $4.90</span>
+      </div>
+      <svg width="220" height="44" viewBox="0 0 220 44" class="spark">
+      <polyline points="3.0,8.0 11.6,14.7 20.1,4.0 28.7,12.0 37.2,18.7 45.8,17.3 54.4,18.7 62.9,17.3 71.5,17.3 80.0,17.3 88.6,22.7 97.2,25.3 105.7,25.3 114.3,24.0 122.8,25.3 131.4,24.0 140.0,28.0 148.5,28.0 157.1,22.7 165.6,22.7 174.2,24.0 182.8,24.0 191.3,25.4 199.9,17.3 208.4,25.3 217.0,40.0" fill="none" stroke="var(--delta-down)" stroke-width="2"
+        stroke-linejoin="round" stroke-linecap="round" />
+      <circle cx="217.0" cy="40.0" r="3" fill="var(--delta-down)" stroke="var(--surface-1)" stroke-width="2" />
+    </svg>
+      
+        <div class="baseline-row">
+          Desde que lo monitoreas (2026-07-25): $3.94
+          <span class="up">(+22.34%)</span>
+        </div>
+      
+    <div class="indicators">
+      <div><span class="ind-label">Capitalización</span><span class="ind-val">$200M · Micro-cap</span></div>
+      <div><span class="ind-label">RSI (14)</span><span class="ind-val">65 · Neutral</span></div>
+      <div><span class="ind-label">Tendencia (SMA20/50)</span><span class="ind-val">Alcista</span></div>
+      <div><span class="ind-label">Rango 52 sem.</span><span class="ind-val">37% · rango medio</span></div>
+      <div><span class="ind-label">P/E actual (fwd)</span><span class="ind-val">9.5 (4.5)</span></div>
+      <div><span class="ind-label">P/B</span><span class="ind-val">0.45</span></div>
+      <div><span class="ind-label">PEG</span><span class="ind-val">N/D</span></div>
+    </div>
+      
+    </article>
       </div>
     </div>
 
